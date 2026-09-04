@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased font-sans min-h-screen flex flex-col;
+  }
+}
+
+.seat-available {
+  @apply bg-white border-2 border-slate-300 hover:border-orange-500 text-slate-700 hover:bg-orange-50 cursor-pointer shadow-sm;
+}
+
+.seat-selected {
+  @apply bg-orange-500 border-2 border-orange-600 text-white shadow-md scale-105 transition-transform;
+}
+
+.seat-occupied {
+  @apply bg-slate-300 border-2 border-slate-400 text-slate-500 cursor-not-allowed opacity-60;
+}
+
+.seat-first-class {
+  @apply border-amber-400 bg-amber-50 text-amber-900;
+}
+
+.seat-business {
+  @apply border-orange-400 bg-orange-50 text-orange-950;
+}
