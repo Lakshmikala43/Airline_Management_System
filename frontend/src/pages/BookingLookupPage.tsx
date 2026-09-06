@@ -88,52 +88,7 @@ export const BookingLookupPage: React.FC = () => {
         <p className="text-xs text-slate-500 font-medium">Retrieve e-tickets, perform web check-in, check flight status, or request cancellations using your 6-character PNR</p>
       </div>
 
-      {/* PNR Lookup Input Card */}
-      <div className="bg-white rounded-3xl shadow-xl border border-slate-200 p-8 max-w-xl mx-auto">
-        <form onSubmit={handleLookup} className="space-y-4">
-          <div>
-            <label className="text-xs font-bold text-slate-700 block mb-1">Enter 6-Character PNR Reference</label>
-            <div className="relative">
-              <Search className="h-4 w-4 text-slate-400 absolute left-3.5 top-3.5" />
-              <input
-                type="text"
-                value={pnr}
-                onChange={(e) => setPnr(e.target.value.toUpperCase())}
-                placeholder="e.g. K7P4M2"
-                maxLength={6}
-                required
-                className="w-full text-sm font-mono font-bold uppercase bg-slate-50 border border-slate-200 rounded-xl py-3 pl-10 pr-3 focus:ring-2 focus:ring-orange-500 outline-none"
-              />
-            </div>
-          </div>
 
-          <button
-            type="submit"
-            disabled={isLoading}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-xs py-3.5 rounded-xl shadow-md transition-all"
-          >
-            {isLoading ? 'LOOKING UP BOOKING...' : 'RETRIEVE BOOKING'}
-          </button>
-        </form>
-
-        {error && (
-          <div className="mt-4 bg-rose-50 border border-rose-200 p-3 rounded-xl flex items-center space-x-2 text-xs font-semibold text-rose-700">
-            <AlertCircle className="h-4 w-4 shrink-0" />
-            <span>{error}</span>
-          </div>
-        )}
-      </div>
-
-      {/* Single Searched PNR Display */}
-      {singleBooking && (
-        <div className="space-y-6">
-          <div className="flex items-center justify-between">
-            <h3 className="text-sm font-black text-slate-900">PNR Lookup Result: {singleBooking.pnr}</h3>
-            <button onClick={() => setSingleBooking(null)} className="text-xs text-slate-400 underline">Clear Result</button>
-          </div>
-          <TicketCard booking={singleBooking} />
-        </div>
-      )}
 
       {checkInMsg && (
         <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-2xl flex items-center justify-between text-xs font-bold text-emerald-900 shadow-sm">
