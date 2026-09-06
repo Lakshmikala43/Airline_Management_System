@@ -1,10 +1,6 @@
-# Environment Variables & Secrets
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-!.env.example
+# Environment Variables & Secrets - Zero committed .env files
+.env*
+*.env
 
 # Maven & Java Build Output
 target/

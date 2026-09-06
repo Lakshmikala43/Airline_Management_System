@@ -1,0 +1,15 @@
+{
+  "name": "skynova-airways-reservation-system",
+  "version": "1.0.0",
+  "description": "SkyNova Royal Airways Full-Stack Platform",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "build": "python measure.py",
+    "test": "python measure.py"
+  },
+  "keywords": ["airline", "reservation", "airport", "spring-boot", "react"],
+  "author": "Lakshmikala",
+  "license": "UNLICENSED",
+  "private": true
+}
