@@ -121,6 +121,7 @@ export const PassengerFormGroup: React.FC<PassengerFormGroupProps> = ({
           <input
             type="date"
             value={passenger.dateOfBirth}
+            max={new Date().toISOString().split('T')[0]}
             onChange={(e) => updateField('dateOfBirth', e.target.value)}
             required
             className="w-full text-xs font-semibold bg-slate-50 border border-slate-200 rounded-lg p-2.5 focus:ring-2 focus:ring-sky-500 outline-none"

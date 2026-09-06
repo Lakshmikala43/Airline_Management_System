@@ -167,6 +167,7 @@ export const FlightSearchWidget: React.FC = () => {
             <input
               type="date"
               value={departureDate}
+              min={new Date().toISOString().split('T')[0]}
               onChange={(e) => setDepartureDate(e.target.value)}
               className="w-full bg-transparent text-xs font-bold text-slate-900 focus:outline-none"
               required
