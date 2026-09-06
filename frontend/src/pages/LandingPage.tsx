@@ -18,14 +18,10 @@ export const LandingPage: React.FC = () => {
 
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-tight max-w-4xl mx-auto">
             Experience Energetic Modern Travel With{' '}
-            <span className="text-slate-900 bg-white/90 px-3 py-1 rounded-2xl shadow-md">
+            <span className="text-slate-900">
               SkyNova Airways
             </span>
           </h1>
-
-          <p className="text-sm sm:text-base text-orange-100 max-w-2xl mx-auto leading-relaxed font-semibold">
-            Real-time seat selection, dynamic fare computation engine, instant PNR generation, and automated electronic boarding pass verification.
-          </p>
 
           {/* Search Widget Component */}
           <div className="pt-6">

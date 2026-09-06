@@ -26,9 +26,6 @@ export const Navbar: React.FC = () => {
               <span className="text-xl font-black tracking-tight text-slate-900">
                 SkyNova <span className="text-orange-500">Airways</span>
               </span>
-              <span className="text-[10px] uppercase tracking-widest text-orange-600 block -mt-1 font-bold">
-                Smart Aviation
-              </span>
             </div>
           </Link>
 
